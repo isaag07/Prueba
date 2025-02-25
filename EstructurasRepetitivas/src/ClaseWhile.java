@@ -9,8 +9,13 @@ public class ClaseWhile {
 
             System.out.println("Por favor ingrese la contraseña: ");
             String pss=lector.nextLine();
-
             pass = pss;
+            if(clave.equals(pass)==false){
+                System.out.println("Contraseña incorrecta, intente de nuevo.");
+            }
+            else{
+                System.out.println("Genial, acesso concedido.");
+            }
 
         }
         lector.close();
